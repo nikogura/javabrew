@@ -1,0 +1,21 @@
+delimiters "%", "%"
+
+formula (version, checksum) ::= <<
+class Javabrew < Formula
+  desc "Easily distrubute a java project via hombrew"
+  homepage "https://github.com/nikogura/bag-o-tricks"
+  url "https://github.com/nikogura/bag-o-tricks"
+  sha256 "%checksum%"
+  version "%version%"
+
+  def install
+    share.install "javabrew-%version%-jar-with-dependencies.jar"
+    bin.install "javabrew"
+
+    ohai "Javabrew Installed. Muahahahahahahahahahaha!"
+    ohai ""
+
+  end
+end
+
+>>

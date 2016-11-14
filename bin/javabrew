@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+JARPATH="/usr/local/share/javabrew-@project.version@-jar-with-dependencies.jar"
+
+java -jar $JARPATH "$@"
