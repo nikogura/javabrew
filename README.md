@@ -1,4 +1,6 @@
-# javabrew [![CircleCI](https://circleci.com/gh/nikogura/javabrew.svg?style=svg)](https://circleci.com/gh/nikogura/javabrew)
+# javabrew 
+
+## Build Status: [![CircleCI](https://circleci.com/gh/nikogura/javabrew.svg?style=svg)](https://circleci.com/gh/nikogura/javabrew)
 
 ## Purpose
 To provide an example of how I figured to build an executable jar and distribute it via homebrew so that it works just
