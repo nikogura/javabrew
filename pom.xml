@@ -212,12 +212,17 @@
             </plugin>
             <plugin>
                 <groupId>com.nikogura</groupId>
-                <artifactId>homebrew-formula</artifactId>
+                <artifactId>homebrew-formula-plugin</artifactId>
                 <version>1.0.0-RELEASE</version>
                 <configuration>
                     <inputfile>${project.build.directory}/javabrew-${project.version}-brew.tar.gz</inputfile>
                     <outputfile>javabrew.rb</outputfile>
                     <template>src/main/resources/com/nikogura/javabrew/templates/formula.stg</template>
+                    <project>Javabrew</project>
+                    <description>Executable Jar distributed via Homebrew</description>
+                    <homepage>https://github.com/nikogura/javabrew</homepage>
+                    <url>git@github.com:nikogura/javabrew.git</url>
+                    <commandscript>javabrew</commandscript>
                 </configuration>
                 <executions>
                     <execution>
