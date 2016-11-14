@@ -2,10 +2,11 @@ machine:
   java:
     version: oraclejdk8
 
-test:
+dependencies:
   pre:
     - mkdir -p .m2/repository/com/nikogura/homebrew-formula-plugin/1.0.0-RELEASE
     - wget $(curl -s "https://circleci.com/api/v1.1/project/github/nikogura/homebrew-formula-plugin/latest/artifacts?branch=master&filter=successful" | grep '"url"' | cut -d' ' -f5 | sed 's/[",]//g' | sed 's/^ *//') -o .m2/repository/com/nikogura/homebrew-formula-plugin/1.0.0-RELEASE/homebrew-formula-plugin-1.0.0-RELEASE.jar
 
+test:
   post:
     - mv target/*.jar $CIRCLE_ARTIFACTS
