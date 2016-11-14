@@ -5,3 +5,6 @@ To provide an example of how I figured to build an executable jar and distribute
 like a normal command line script, but it's java in the background.
 
 Not exactly rocket science, but useful, and I don't want to forget how I did it.
+
+## Status
+[![CircleCI](https://circleci.com/gh/nikogura/javabrew.svg?style=svg)](https://circleci.com/gh/nikogura/javabrew)
